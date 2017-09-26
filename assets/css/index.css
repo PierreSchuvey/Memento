@@ -1,0 +1,21 @@
+header{
+  margin:auto;
+  background: url(/home/pierre/Documents/website/Memento/assets/img/e2n.jpg) ;
+  background-repeat: no-repeat;
+  background-color: #E8DAC7 ;
+  background-position: center;
+  background-size:contain;
+  width:861px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+header h1 {
+  font-family: "Comic sans MS ", sans-serif;
+  color: #049B87 ;
+  text-decoration: none;
+  position: absolute;
+  left: 245px;
+  top: 25px;
+
+}
