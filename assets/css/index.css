@@ -1,21 +1,62 @@
-header{
-  margin:auto;
-  background: url(/home/pierre/Documents/website/Memento/assets/img/e2n.jpg) ;
-  background-repeat: no-repeat;
-  background-color: #E8DAC7 ;
-  background-position: center;
-  background-size:contain;
-  width:861px;
-  height: 250px;
-  border-radius: 15px;
+*{
+  margin: auto;
 }
 
-header h1 {
-  font-family: "Comic sans MS ", sans-serif;
-  color: #049B87 ;
-  text-decoration: none;
-  position: absolute;
-  left: 245px;
-  top: 25px;
+ header{
+   background: url(/home/pierre/Documents/website/Memento/assets/img/blocnote.png) no-repeat;
+   margin: auto;
+   width: 861px;
+	 height: 300px;
+	 border-radius: 25px;
+ }
+ #titre{
+  position: relative;
+  color: #0066CC;
+  padding-left: 20%;
+  font-size: 120px;
+  padding-top: 67px;
+ }
+ #navigation
+ {
+   margin-top: -20px;
+   height: 30px;
+   background-color: #0066CC;
+   opacity: 0.2;
+ }
 
+a.bouton{
+    top: -28px;
+    position: relative;
+		display:inline;
+    padding: 20px;
+    font-weight: bold;
+		color:#0066CC;
+		line-height:29px;
+		text-decoration:none;
+	}
+
+a:hover.bouton{
+	color:blue;
 }
+
+a.menu{
+    top: -28px;
+    position: relative;
+		display:inline;
+    padding: 20px;
+    font-weight: bold;
+		color:#0066CC;
+		line-height:29px;
+		text-decoration:none;
+	}
+
+a:hover.menu{
+	color:blue;
+}
+
+body{
+  background-color: #BEDBD7;
+}
+
+ul ul {display: none;}
+li:hover ul.niveau2, li li:hover ul.niveau3 {display:block;}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <a href="index.html"><img class="e2n" src="assets/img/host.png" alt="commande.jpg" title="Accueil";></a>
+  <title>Lignes de commandes</title>
+</head>
+<body>
+  <h1>Les Vhosts</h1>
+  <h3 class="nb">n.b : tous la procédure doit ce faire en @root pour cela taper la commande <strong>sudo -s</strong></h3>
+  <h2>Procédure d'installation d'un Vhost :</h2>
+  <p>1. Se trouver dans le dossier <strong>cd /etc/apache2/sites-available/ </strong></p>
+  <p>2. Copier et coller un .conf existant pour cela il faut utiliser la commande <strong>cp (nomdu fichier  copier)(nom du fichier à coller)</strong></p>
+  <p>3. Editer le nouveau fichier créé ave la commande <strong>nano (nom du nouveau fichier)</strong></p>
+  <p>
+        4. Dans l'éditeur de texte faire un <stong>Ctrl w</stong> puis <strong>Ctrl r</strong>afin de remplacer les <strong>nom_utilisateur
+        </strong>par<strong>pierre</strong> puis les nom des .conf par le nouveau .conf
+  </p>
+  <p>5. Enregistre l'édition avec <strong>Ctrl O</strong> puis<strong> Ctrl X</strong></p>
+  <p>6. taper la commande <strong>nano /etc/hosts</strong></p>
+  <p>7. Ajouter à la suite des lignes déjà existante <strong>127.0.0.1(nom du .conf récement créé)</strong></p>
+  <p>8. Taper <strong>a2ensite (nom du .conf récement créé)</strong> </p>
+  <p>9. Taper <strong>systemctl reload apache2</strong></p>
+</body>
+</html>

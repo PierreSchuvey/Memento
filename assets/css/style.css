@@ -1,29 +1,55 @@
+*{
+  margin: auto;
+}
+
 h1{
-  color : red ;
+  color : blue ;
   text-align: center ;
+  padding: 10px;
 }
-
-
 h2{
-  color : green ;
+  color : blue ;
+  padding: 10px;
 }
-
-
 .nb{
   text-decoration: underline;
   text-decoration-color: red ;
 }
-
-
 div{
 display: inline;
   font-weight: bold;
 }
- p{display: inline;}
-
- .e2n{
-
+.e2n{
    display: block;
    margin-left: auto;
    margin-right: auto;
   }
+body{
+    background-color: #BEDBD7;
+  }
+
+p{
+    color:#0066CC;
+    padding: 10px;
+  }
+
+  a.button{
+    display: flex;
+      font-weight: bold;
+  		color:#0066CC;
+  		line-height:29px;
+  		text-decoration:none;
+  	}
+
+  a:hover.button{
+  	color:blue;
+  }
+
+img{
+  width: 143px;
+  height:143px;
+}
+
+img:hover{
+  filter: drop-shadow(10px 10px 20px #0066CC);
+}

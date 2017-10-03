@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html>
-   <head>
+  <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/style.css">
-    <a href="index.html"><img class="e2n" src="/home/pierre/Documents/website/Memento/assets/img/e2n.jpg" title="accueil" alt="e2n" style="width:304px;height:228px ;"></a>
-    <title>Lignes de commandes</title>
+    <title>Guide git</title>
   </head>
-  <body>
-    <h1>Git</h1>
-          <h3 class="nb">n.b : Précéder la commande de sudo pour l'éffectuer en tant que Super utilisateur</h3>
-
-          <p>Pour créer un dépôt j'utilise : <div>git init</div></p><br/>
-            <br/>
-          <p>Poour indexer un fichier j'utilise : <div>git add</div></p><br/>
-            <br/>
-          <p>Pour sauvegarder un dépôt j'utilise : <div>git commit</div></p><br/>
-            <br/>
-          <p>Pour afficher l'historique des dépôts j'utilise : <div>git log</div></p><br/>
-            <br/>
-          <p>Pour afficher le contenus indexé j'utilise : <div>git status</div></p><br/>
-            <br/>
-
-    <pre><code></code></pre>
+      <a href="index.html"><img class="e2n" src="./assets/img/git.png" title="accueil" alt="git";></a>
+    <h1>Sommaire</h1>
+    <a  class="button" href="#1point" alt="1er point" title="Créer Dépôt">Créer un dépôt .git</a>
+    <a  class="button" href="#2point" alt="2eme point" title="Gérer Dépôt">Gérer les fichiers dans le dépôt</a>
+    <a  class="button" href="#3point" alt="3eme point" title="Gérer Branches">Gérer les branches</a>
+    <a  class="button" href="#4point" alt="4eme point" title="Créer Dépôt Distant">Créer un dépôt décentralisé</a>
+    <a  class="button" href="#5point" alt="5eme point" title="Gérer Relations Dépôt">Gérer les relations entre les dépôts locaux et décentralisés</a>
+    <div id="1point">
+      <h1>Créer un dépôt .git</h1></div>
+    <p>
+      Dans un premier temps je me rend dans le dossier du projet que je souhaite sauvegarder.<br/>
+      Pour cela je vais utiliser la commande <strong>cd</strong> dans le terminal.<br/>
+      Une fois rendus dans le dossier désiré j'utilise la commande <strong>git init</strong> afin de créer le dépôt .git
+    </p>
+    <div id="2point">
+      <h1>Gérer les fichiers dans le dépôt</h1>
+    </div>
+    <p>
+      Tous d'abord il s'agit d'indexer les fichiers que le souhaites intégrer au dépôt, pour ce fait je vais utiliser la commande <strong>git add</strong>.<br />
+      La commande ce présentera comme ceci <strong>"git add (nom du fichier/dossier à indexer)"</strong><br />
+      Cette commande est également à faire après la modification de l'un des fichiers déjà présent dans le dépôt
+    </p>
+    <p>
+      Ensuite il faudras valider et inscrire de fasson définitive ces ajouts et modifications dans le dépôt.<br />
+      Pour cela il faudra ce servire de la commande <b>git commit -m</b><br />
+      La commande ce présentera comme ceci <strong>git commit -m "Déscription des modifications apportées"</strong>
+    </p>
+    <div id="3point">
+      <h1>Gérer les branches</h1>
+    </div>
+    <p>
+      Une branche serras une version du projet en cours ce qui permettras de tester de nouvelles idées sans empietter sur une version potentielement stable.<br />
+      Pour ce fais il faudras tous d'abord créer cette fameuse branche pour cela il faut utiliser la commande <strong>git branch</strong><br />
+      Celle-ci s'écrit de cette maniére <strong>git branch (nom de la branche)</strong>
+    </p>
+    <p>
+      Il est possible de jongler entre les branches éxistantes pour cela il faut utiliser la commande<strong>git checkout</strong><br />
+      Cette commande ce rédige de cette maniére : <strong>git checkout (nom de la branche vers la )</strong>
+    </p>
+    <p>
+      Une fois la branche modifier 2 options ce présentes : fusionner la branche secondaire avec la branche master où supprimer la branche secondaire<br />
+      Pour fusionner deux branches il faut tous d'abord être sur la branche principale il faut ensuite utiliser la commande <strong>git merge</strong><br />
+      Cette commande ce rédige de cette fasson : <strong>git merge (nom de la branche secondaire)</strong>
+    </p>
+    <p>
+      Pour supprimer une branche il faut tous d'abord être sur la branche principale il faut ensuite utiliser la commande <strong>git branch -d</strong><br />
+      Cette commande ce rédige de cette fasson : <strong>git branch -d (nom de la branche à supprimer)</strong>
+    </p>
+    <div id="4point">
+      <h1>Créer un dépôt décentralisé</h1>
+    </div>
+    <p>
+      Pour créer un dépot distant il faudras tous d'abord ce rendre à cette adresse : <a href="https://github.com/new" alt="github">https://github.com/new</a> et rentrer le nom de ce dépôt dans l'éspace prévus à cet effet.<br />
+      Veillez à conserver le lien fournis, dans le terminal taper la commande <strong>git remote add (le nom cours du dépôt)(l'URL prcédement enregistré)</strong><br />
+      Félicitation vous venez de créer et lier votre dépôt local au dépôt distant !
+    </p>
+    <div id="5point">
+      <h1>Gérer les relations entre les dépôts locaux et décentralisés</h1>
+    </div>
+    <p>Il est possible d'envoyer et de récupérer les fichiers et dossiers du dépôt distant pour cela on va utiliser 2 commandes.<br /></p>
+    <p>
+      Dans un premier temps on va utiliser la commande <strong>git push</strong> afin d'envoyer les dossiers et fichiers vers le dépôt distant<br />
+      La syntaxe de cette commande serra celle-ci <strong>git push (nom court du dépôt distant)(nom de la branche à envoyer)</strong>
+    </p>
+    <p>
+      Nous pouvons également utiliser la commande <strong>git pull</strong> afin d'envoyer les dossiers et fichiers vers le dépôt distant<br />
+      La syntaxe de cette commande serra celle-ci <strong>git pull (nom court du dépôt distant)(nom de la branche à réceptionner)</strong>
+    </p>
+    <footer>
+      <a href="#"><img src="./assets/img/arrow-up-a_icon-icons.com_50460.png" title="monter la page" alt="flêche haut" style="width:50px;height:50px;float:right";></a>
+    </footer>
   </body>
 </html>
